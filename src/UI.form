@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Main">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1118" height="593"/>
+    </constraints>
+    <properties>
+      <background color="-2104859"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="2058f" binding="titleContainer" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-2104859"/>
+          <preferredSize width="0" height="75"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="13b2e" class="javax.swing.JLabel" binding="titleLabel">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <font name="Calibri" size="48" style="0"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="The worlds worst 4 gewinnt"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="4e7a1" binding="gameContainer" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-15000577"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="76511" binding="selectorPanel" layout-manager="FlowLayout" hgap="30" vgap="5" flow-align="1">
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-2104859"/>
+              <preferredSize width="0" height="100"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="7fa94" class="javax.swing.JButton" binding="button0">
+                <constraints/>
+                <properties>
+                  <icon value="icons/amogus20px.png"/>
+                  <preferredSize width="80" height="80"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="cafc" class="javax.swing.JButton" binding="button1">
+                <constraints/>
+                <properties>
+                  <icon value="icons/amogus20px.png"/>
+                  <preferredSize width="80" height="80"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="265b7" class="javax.swing.JButton" binding="button2">
+                <constraints/>
+                <properties>
+                  <icon value="icons/amogus20px.png"/>
+                  <preferredSize width="80" height="80"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="622e7" class="javax.swing.JButton" binding="button3">
+                <constraints/>
+                <properties>
+                  <icon value="icons/amogus20px.png"/>
+                  <preferredSize width="80" height="80"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="a9a4c" class="javax.swing.JButton" binding="button4">
+                <constraints/>
+                <properties>
+                  <icon value="icons/amogus20px.png"/>
+                  <preferredSize width="80" height="80"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="6da87" class="javax.swing.JButton" binding="button5">
+                <constraints/>
+                <properties>
+                  <icon value="icons/amogus20px.png"/>
+                  <preferredSize width="80" height="80"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="15237" class="javax.swing.JButton" binding="button6">
+                <constraints/>
+                <properties>
+                  <icon value="icons/amogus20px.png"/>
+                  <preferredSize width="80" height="80"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="b9051" binding="displayPanel" layout-manager="GridLayoutManager" row-count="6" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-2104859"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="c4c14" binding="panel05" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="23c7c" binding="panel00" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="75567" binding="panel01" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="36b77" binding="panel02" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="f2c1d" binding="panel03" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="5870a" binding="panel04" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="587" binding="panel12" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="a81fb" binding="panel15" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="4cc0d" binding="panel14" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="906c0" binding="panel13" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="38d81" binding="panel21" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="96ed2" binding="panel31" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="1815c" binding="panel41" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="84b9a" binding="panel51" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="d9687" binding="panel61" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="1f4da" binding="panel11" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="aa92b" binding="panel22" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="c395e" binding="panel32" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="32c9c" binding="panel23" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="1e7a5" binding="panel24" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="8956c" binding="panel25" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="e70d6" binding="panel35" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="2809c" binding="panel34" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="8a221" binding="panel33" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="3e335" binding="panel45" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="c3216" binding="panel44" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="a6675" binding="panel55" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="705ed" binding="panel65" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="8bbd3" binding="panel64" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="5bb3d" binding="panel54" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="e474b" binding="panel63" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="111a9" binding="panel53" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="f81f1" binding="panel43" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="b6917" binding="panel42" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="1aea2" binding="panel52" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="9106b" binding="panel62" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="ea80" binding="panel10" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="3a72" binding="panel20" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="48f5d" binding="panel30" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="4fe7d" binding="panel40" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="eca97" binding="panel50" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="bf452" binding="panel60" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184553"/>
+                  <focusable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
