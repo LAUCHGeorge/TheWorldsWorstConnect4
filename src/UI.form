@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Main">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="UI">
   <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
       <xy x="20" y="20" width="1118" height="593"/>
@@ -12,7 +12,7 @@
       <grid id="2058f" binding="titleContainer" layout-manager="BorderLayout" hgap="0" vgap="0">
         <constraints border-constraint="North"/>
         <properties>
-          <background color="-2104859"/>
+          <background color="-986896"/>
           <preferredSize width="0" height="75"/>
         </properties>
         <border type="none"/>
@@ -38,7 +38,7 @@
           <grid id="76511" binding="selectorPanel" layout-manager="FlowLayout" hgap="30" vgap="5" flow-align="1">
             <constraints border-constraint="North"/>
             <properties>
-              <background color="-2104859"/>
+              <background color="-986896"/>
               <preferredSize width="0" height="100"/>
             </properties>
             <border type="none"/>
@@ -46,6 +46,7 @@
               <component id="7fa94" class="javax.swing.JButton" binding="button0">
                 <constraints/>
                 <properties>
+                  <focusable value="false"/>
                   <icon value="icons/amogus20px.png"/>
                   <preferredSize width="80" height="80"/>
                   <text value=""/>
@@ -54,6 +55,7 @@
               <component id="cafc" class="javax.swing.JButton" binding="button1">
                 <constraints/>
                 <properties>
+                  <focusable value="false"/>
                   <icon value="icons/amogus20px.png"/>
                   <preferredSize width="80" height="80"/>
                   <text value=""/>
@@ -62,6 +64,7 @@
               <component id="265b7" class="javax.swing.JButton" binding="button2">
                 <constraints/>
                 <properties>
+                  <focusable value="false"/>
                   <icon value="icons/amogus20px.png"/>
                   <preferredSize width="80" height="80"/>
                   <text value=""/>
@@ -70,6 +73,7 @@
               <component id="622e7" class="javax.swing.JButton" binding="button3">
                 <constraints/>
                 <properties>
+                  <focusable value="false"/>
                   <icon value="icons/amogus20px.png"/>
                   <preferredSize width="80" height="80"/>
                   <text value=""/>
@@ -78,6 +82,7 @@
               <component id="a9a4c" class="javax.swing.JButton" binding="button4">
                 <constraints/>
                 <properties>
+                  <focusable value="false"/>
                   <icon value="icons/amogus20px.png"/>
                   <preferredSize width="80" height="80"/>
                   <text value=""/>
@@ -86,6 +91,7 @@
               <component id="6da87" class="javax.swing.JButton" binding="button5">
                 <constraints/>
                 <properties>
+                  <focusable value="false"/>
                   <icon value="icons/amogus20px.png"/>
                   <preferredSize width="80" height="80"/>
                   <text value=""/>
@@ -94,6 +100,7 @@
               <component id="15237" class="javax.swing.JButton" binding="button6">
                 <constraints/>
                 <properties>
+                  <focusable value="false"/>
                   <icon value="icons/amogus20px.png"/>
                   <preferredSize width="80" height="80"/>
                   <text value=""/>
@@ -105,7 +112,7 @@
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints border-constraint="Center"/>
             <properties>
-              <background color="-2104859"/>
+              <background color="-986896"/>
             </properties>
             <border type="none"/>
             <children>
