@@ -15,7 +15,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        JFrame mainFrame = new JFrame("The worlds worst 4 gewinnt");
+        JFrame mainFrame = new JFrame("The worlds worst 4 connect:");
 
         ui = new UI();
 
@@ -58,13 +58,25 @@ public class Main {
             panelxy[0] = column;
             panelxy[1] = 5;
         } else {
+            JOptionPane.showMessageDialog(null,"no.");
             valid = false;
         }
 
-
         if (valid) {
-            ui.setPanelColor(Color.RED,panelxy);
-            ui.transferGrid(grid);
+            switch(player) {
+                case 0:
+                    ui.setPanelColor(Color.RED,panelxy);
+                    player = 1;
+                    break;
+                case 1:
+                    ui.setPanelColor(Color.YELLOW,panelxy);
+                    player = 0;
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null,"Shit is broken. Exit Code: 69");
+                    System.exit(69);
+            }
+            ui.transfer(grid,player);
         }
 
     }

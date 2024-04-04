@@ -80,13 +80,13 @@ public class UI extends Main{
                 {-1,-1,-1,-1,-1,-1,-1}
         };
 
-        initializeActionListener(grid,button0,0);
-        initializeActionListener(grid,button1,1);
-        initializeActionListener(grid,button2,2);
-        initializeActionListener(grid,button3,3);
-        initializeActionListener(grid,button4,4);
-        initializeActionListener(grid,button5,5);
-        initializeActionListener(grid,button6,6);
+        initializeActionListener(grid,button0,0,0);
+        initializeActionListener(grid,button1,1,0);
+        initializeActionListener(grid,button2,2,0);
+        initializeActionListener(grid,button3,3,0);
+        initializeActionListener(grid,button4,4,0);
+        initializeActionListener(grid,button5,5,0);
+        initializeActionListener(grid,button6,6,0);
 
     }
 
@@ -95,7 +95,7 @@ public class UI extends Main{
         return this.mainPanel;
     }
 
-    private void initializeActionListener(int[][] grid,JButton button,int column) {
+    private void initializeActionListener(int[][] grid,JButton button,int column,int player) {
 
         for( ActionListener al : button.getActionListeners() ) {
                 button.removeActionListener( al );
@@ -103,19 +103,19 @@ public class UI extends Main{
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Main.buttonPress(1,grid,column);
+                Main.buttonPress(player,grid,column);
             }
         });
     }
 
-    public void transferGrid(int[][] grid) {
-        initializeActionListener(grid,button0,0);
-        initializeActionListener(grid,button1,1);
-        initializeActionListener(grid,button2,2);
-        initializeActionListener(grid,button3,3);
-        initializeActionListener(grid,button4,4);
-        initializeActionListener(grid,button5,5);
-        initializeActionListener(grid,button6,6);
+    public void transfer(int[][] grid,int player) {
+        initializeActionListener(grid,button0,0,player);
+        initializeActionListener(grid,button1,1,player);
+        initializeActionListener(grid,button2,2,player);
+        initializeActionListener(grid,button3,3,player);
+        initializeActionListener(grid,button4,4,player);
+        initializeActionListener(grid,button5,5,player);
+        initializeActionListener(grid,button6,6,player);
     }
     public void setPanelColor(Color color,int[] panelxy){
         JPanel panel = null;

@@ -20,7 +20,7 @@
           <component id="13b2e" class="javax.swing.JLabel" binding="titleLabel">
             <constraints border-constraint="Center"/>
             <properties>
-              <font name="Calibri" size="48" style="0"/>
+              <font name="Calibri" size="48" style="1"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
               <text value="The worlds worst connect 4"/>
