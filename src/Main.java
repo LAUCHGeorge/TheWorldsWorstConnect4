@@ -73,7 +73,7 @@ public class Main {
                     break;
                 case 1:
                     ui.setPanelColor(Color.YELLOW, panelxy);
-//                    win = checkGrid(grid,win,player);
+                    win = checkGrid(grid,win,player);
                     if (win) {
                         JOptionPane.showMessageDialog(null, "Yellow has won the game. L red.");
                         System.exit(4201);
