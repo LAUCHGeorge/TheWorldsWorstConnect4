@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class UI extends Main{
+public class UI{
     private JPanel mainPanel;
     private JPanel titleContainer;
     private JPanel gameContainer;
@@ -69,8 +69,6 @@ public class UI extends Main{
 
     public UI() {
 
-        int test = 0;
-        Main main = new Main();
         int[][] grid = {
                 {-1,-1,-1,-1,-1,-1,-1},
                 {-1,-1,-1,-1,-1,-1,-1},
@@ -91,7 +89,6 @@ public class UI extends Main{
     }
 
     public JPanel getMainPanel(){
-
         return this.mainPanel;
     }
 
