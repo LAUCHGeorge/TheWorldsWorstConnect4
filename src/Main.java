@@ -103,7 +103,7 @@ public class Main {
             if(spots < 4) {
                 if (grid[indexY][indexX] == player) {spots++;}
                 else {spots = 0;}
-                if (counter == 6) {indexY++; indexX = 0; counter = 0;}
+                if (counter == 6) {indexY++; indexX = 0; counter = 0; spots = 0;}
                 else {counter++; indexX++;}
                 System.out.println(spots);
             }
@@ -120,7 +120,7 @@ public class Main {
             if(spots < 4) {
                 if (grid[indexY][indexX] == player) {spots++;}
                 else {spots = 0;}
-                if (counter == 5) {indexX++; indexY = 0; counter = 0;}
+                if (counter == 5) {indexX++; indexY = 0; counter = 0; spots = 0;}
                 else {counter++; indexY++;}
             }
             else {win=true;break;}
