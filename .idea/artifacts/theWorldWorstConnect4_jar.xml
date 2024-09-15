@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="theWorldWorstConnect4:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/theWorldWorstConnect4_jar</output-path>
+    <root id="archive" name="theWorldWorstConnect4.jar">
+      <element id="module-output" name="theWorldWorstConnect4" />
+    </root>
+  </artifact>
+</component>
