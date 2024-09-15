@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.Arrays;
 
 public class Main {
     private static UI ui;
@@ -9,12 +8,11 @@ public class Main {
 
         try {
             UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException |
-                 UnsupportedLookAndFeelException e) {
-            e.printStackTrace();
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+            System.err.println("[ERROR] Exception occurred: "+e.getMessage());
         }
 
-        JFrame mainFrame = new JFrame("The worlds worst 4 connect:");
+        JFrame mainFrame = new JFrame("The world's worst connect 4");
 
         ui = new UI();
 
@@ -23,8 +21,8 @@ public class Main {
         mainFrame.setResizable(true);
         mainFrame.setLocationRelativeTo(null);
         mainFrame.setContentPane(ui.getMainPanel());
-        mainFrame.setVisible(true);
 
+        mainFrame.setVisible(true);
 
     }
 
@@ -59,8 +57,6 @@ public class Main {
         }
 
         if (valid) {
-
-
             switch (player) {
                 case 0:
                     ui.setPanelColor(Color.RED, panelxy);
@@ -84,120 +80,99 @@ public class Main {
                     JOptionPane.showMessageDialog(null, "Shit is broken. Exit Code: 69");
                     System.exit(69);
             }
-
             ui.transfer(grid, player);
         }
 
     }
 
-
-
     public static boolean checkGrid(int[][] grid, boolean win,int player) {
         int counter = 0;
-        int diagMode = 0;
+        int diagonalRow = 0;
         int indexX = 0;
         int indexY = 0;
         int spots = 0;
 
         for(int i = 0; i<=41; i++) {
-            if(spots < 4) {
-                if (grid[indexY][indexX] == player) {spots++;}
-                else {spots = 0;}
-                if (counter == 6) {indexY++; indexX = 0; counter = 0; spots = 0;}
-                else {counter++; indexX++;}
-                System.out.println(spots);
-            }
-            else {win=true;break;}
 
+            int debugIX = indexX;
+            int debugIY = indexY;
+
+            if (grid[indexY][indexX] == player) {spots++;}
+            else {spots = 0;}
+            if (spots >= 4) {return true;}
+            if (indexX == 6) {indexY++; indexX = 0; spots = 0;}
+            else {indexX++;}
+
+//            System.out.println("[HORIZONTAL] S: "+spots+" | X: "+debugIX+" | Y: "+debugIY);
         }
 
-        counter = 0;
         indexX = 0;
         indexY = 0;
         spots = 0;
 
         for(int i = 0; i<=41; i++) {
-            if(spots < 4) {
-                if (grid[indexY][indexX] == player) {spots++;}
-                else {spots = 0;}
-                if (counter == 5) {indexX++; indexY = 0; counter = 0; spots = 0;}
-                else {counter++; indexY++;}
-            }
-            else {win=true;break;}
+
+            int debugIX = indexX;
+            int debugIY = indexY;
+
+            if (grid[indexY][indexX] == player) {spots++;}
+            else {spots = 0;}
+            if (spots >= 4) {return true;}
+            if (indexY == 5) {indexX++; indexY = 0; spots = 0;}
+            else {indexY++;}
+
+//            System.out.println("[VERTICAL] S: "+spots+" | X: "+debugIX+" | Y: "+debugIY);
         }
 
-        counter = 0;
         indexX = 0;
-        indexY = 0;
+        indexY = 3;
         spots = 0;
 
         for(int i = 0; i<=41; i++) {
-            if(spots < 4) {
-                System.out.println("IF SPOTS PASSED");
-                if (grid[indexY][indexX] == player) {spots++;}
-                else {spots = 0;}
-                switch(diagMode) {
-                    case 0:
-                        System.out.println("CASE 0 PASSED");
-                        System.out.println(indexX);
-                        System.out.println(indexY);
-                        if (counter == 5) {indexX = 1; indexY = 0; counter = 0; diagMode++;}
-                        else {counter++; indexY++; indexX++;}
-                        break;
-                    case 1:
-                        System.out.println("CASE 1 PASSED");
-                        System.out.println(indexX);
-                        System.out.println(indexY);
-                        if (counter == 5) {indexX = 2; indexY = 0; counter = 0; diagMode++;}
-                        else {counter++; indexY++; indexX++;}
-                        break;
-                    case 2:
-                        System.out.println("CASE 2 PASSED");
-                        System.out.println(indexX);
-                        System.out.println(indexY);
-                        if (counter == 4) {indexX = 3; indexY = 0; counter = 0; diagMode++;}
-                        else {counter++; indexY++; indexX++;}
-                        break;
-                    case 3:
-                        System.out.println("CASE 3 PASSED");
-                        System.out.println(indexX);
-                        System.out.println(indexY);
-                        if (counter == 3) {indexX = 4; indexY = 0; counter = 0; diagMode++;}
-                        else {counter++; indexY++; indexX++;}
-                        break;
-                    case 4:
-                        System.out.println("CASE 4 PASSED");
-                        System.out.println(indexX);
-                        System.out.println(indexY);
-                        if (counter == 2) {indexX = 0; indexY = 1; counter = 0; diagMode++;}
-                        else {counter++; indexY++; indexX++;}
-                        break;
-                    case 5:
-                        System.out.println("CASE 5 PASSED");
-                        System.out.println(indexX);
-                        System.out.println(indexY);
-                        if (counter == 3) {indexX = 0; indexY = 2; counter = 0; diagMode++;}
-                        else {counter++; indexY++; indexX++;}
-                        break;
-                    case 6:
-                        System.out.println("CASE 6 PASSED");
-                        System.out.println(indexX);
-                        System.out.println(indexY);
-                        if (counter == 2) {indexX = 0; indexY = 0; counter = 0; diagMode = 0;}
-                        else {counter++; indexY++; indexX++;}
-                        break;
-                }
-            }
-            else {win=true;break;}
-            counter = 0;
-            indexX = 0;
-            indexY = 0;
-            spots = 0;
 
+            int debugIX = indexX;
+            int debugIY = indexY;
+
+            if (grid[indexY][indexX] == player) {spots++;}
+            else {spots = 0;}
+            if (spots >= 4) {return true;}
+            switch(diagonalRow) {
+                case 0:
+                    if (indexY == 0) {indexX = 0; indexY = 4; diagonalRow++; spots = 0;}
+                    else {indexY--; indexX++;}
+                    break;
+                case 1:
+                    if (indexY == 0) {indexX = 0; indexY = 5; diagonalRow++; spots = 0;}
+                    else {indexY--; indexX++;}
+                    break;
+                case 2:
+                    if (indexY == 0) {indexX = 1; indexY = 5; diagonalRow++; spots = 0;}
+                    else {indexY--; indexX++;}
+                    break;
+                case 3:
+                    if (indexY == 0) {indexX = 2; indexY = 5; diagonalRow++; spots = 0;}
+                    else {indexY--; indexX++;}
+                    break;
+                case 4:
+                    if (indexY == 1) {indexX = 3; indexY = 5; diagonalRow++; spots = 0;}
+                    else {indexY--; indexX++;}
+                    break;
+                case 5:
+                    if (indexY == 2) {indexX = 4; indexY = 5; diagonalRow++; spots = 0;}
+                    else {indexY--; indexX++;}
+                    break;
+                case 6:
+                    if (indexY == 3) { spots = 0;}
+                    else {indexY--; indexX++;}
+                    break;
+            }
+            System.out.println("[DIAGONAL] [ROW "+diagonalRow+"] S: "+spots+" | X: "+debugIX+" | Y: "+debugIY);
         }
 
-
-        return win;
+        System.out.println();
+        System.out.println("------------------------------------------------------");
+        System.out.println();
+        return false;
     }
 
 }
