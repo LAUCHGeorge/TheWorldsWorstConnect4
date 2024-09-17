@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.Arrays;
 
 public class Main {
     private static UI ui;
@@ -103,7 +104,7 @@ public class Main {
             if (indexX == 6) {indexY++; indexX = 0; spots = 0;}
             else {indexX++;}
 
-//            System.out.println("[HORIZONTAL] S: "+spots+" | X: "+debugIX+" | Y: "+debugIY);
+            System.out.println("[HORIZONTAL] S: "+spots+" | X: "+debugIX+" | Y: "+debugIY);
         }
 
         indexX = 0;
@@ -121,14 +122,25 @@ public class Main {
             if (indexY == 5) {indexX++; indexY = 0; spots = 0;}
             else {indexY++;}
 
-//            System.out.println("[VERTICAL] S: "+spots+" | X: "+debugIX+" | Y: "+debugIY);
+            System.out.println("[VERTICAL] S: "+spots+" | X: "+debugIX+" | Y: "+debugIY);
         }
 
         indexX = 0;
         indexY = 3;
         spots = 0;
+        boolean continueLoop = true;
 
-        for(int i = 0; i<=41; i++) {
+        for (int y = 0; y < 6; y++) {
+
+            for (int x = 0; x < 7; x++) {
+                System.out.print("  " + grid[y][x] + "  ");
+            }
+
+            System.out.println("");
+
+        }
+
+        while(continueLoop) {
 
             int debugIX = indexX;
             int debugIY = indexY;
@@ -158,15 +170,53 @@ public class Main {
                     else {indexY--; indexX++;}
                     break;
                 case 5:
-                    if (indexY == 2) {indexX = 4; indexY = 5; diagonalRow++; spots = 0;}
-                    else {indexY--; indexX++;}
-                    break;
-                case 6:
-                    if (indexY == 3) { spots = 0;}
+                    if (indexY == 2) {continueLoop = false; spots = 0; diagonalRow = 0;}
                     else {indexY--; indexX++;}
                     break;
             }
-            System.out.println("[DIAGONAL] [ROW "+diagonalRow+"] S: "+spots+" | X: "+debugIX+" | Y: "+debugIY);
+            System.out.println("[DIAGONAL 1] [ROW "+diagonalRow+"] S: "+spots+" | X: "+indexX+" | Y: "+indexY);
+        }
+
+        indexX = 6;
+        indexY = 3;
+
+        continueLoop = true;
+
+        while(continueLoop) {
+
+            int debugIX = indexX;
+            int debugIY = indexY;
+;
+            if (grid[indexY][indexX] == player) {spots++;}
+            else {spots = 0;}
+            if (spots >= 4) {return true;}
+            switch(diagonalRow) {
+                case 0:
+                    if (indexY == 0) {indexX = 6; indexY = 4; diagonalRow++; spots = 0;}
+                    else {indexY--; indexX--;}
+                    break;
+                case 1:
+                    if (indexY == 0) {indexX = 6; indexY = 5; diagonalRow++; spots = 0;}
+                    else {indexY--; indexX--;}
+                    break;
+                case 2:
+                    if (indexY == 0) {indexX = 5; indexY = 5; diagonalRow++; spots = 0;}
+                    else {indexY--; indexX--;}
+                    break;
+                case 3:
+                    if (indexY == 0) {indexX = 4; indexY = 5; diagonalRow++; spots = 0;}
+                    else {indexY--; indexX--;}
+                    break;
+                case 4:
+                    if (indexY == 1) {indexX = 3; indexY = 5; diagonalRow++; spots = 0;}
+                    else {indexY--; indexX--;}
+                    break;
+                case 5:
+                    if (indexY == 2) {continueLoop = false; spots = 0;}
+                    else {indexY--; indexX--;}
+                    break;
+            }
+            System.out.println("[DIAGONAL 2] [ROW "+diagonalRow+"] S: "+spots+" | X: "+indexX+" | Y: "+indexY);
         }
 
         System.out.println();
