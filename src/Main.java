@@ -130,16 +130,6 @@ public class Main {
         spots = 0;
         boolean continueLoop = true;
 
-        for (int y = 0; y < 6; y++) {
-
-            for (int x = 0; x < 7; x++) {
-                System.out.print("  " + grid[y][x] + "  ");
-            }
-
-            System.out.println("");
-
-        }
-
         while(continueLoop) {
 
             int debugIX = indexX;
